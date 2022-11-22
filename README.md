@@ -1,7 +1,7 @@
 # Mekanbul REST API Adresleri
 
 1. [Girilen Konum Civarındaki Mekanları Listele](https://replit.com/@emin64/mekanbul#Resimler/mekanlar%C4%B1listele.png)
-![Girilen Konum Civarındaki Mekanları Listele](./Resimler/mekanlistele.png)
+![Girilen Konum Civarındaki Mekanları Listele](./Resimler/mekanlarılistele.png)
 
 2. [Mekanın ID İle Mekan Bilgileri Getir](https://replit.com/@emin64/mekanbul#Resimler/mekangetir.png)
 ![Mekanın ID İle Mekan Bilgileri Getir](./Resimler/mekangetir.png)
