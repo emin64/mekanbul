@@ -93,6 +93,6 @@ module.exports={
     mekanlariListele,
     mekanEkle,
     mekanGetir,
-    mekanGuncelle,   //değişiklik
+    mekanGuncelle,   //değişiklikkkkkk
     mekanSil
 }
