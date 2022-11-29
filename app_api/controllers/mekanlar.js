@@ -58,6 +58,7 @@ const mekanlariListele=async(req,res)=>{
         cevapOlustur(res,404,e);
     }
 };
+//a
 
 const mekanEkle = function(req,res){
     Mekan.create({
