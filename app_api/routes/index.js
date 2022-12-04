@@ -1,27 +1,27 @@
 var express=require("express");
+const { yorumEkle } = require("../../app_server/controllers/mekanlar");
 var router=express.Router();
 var ctrlMekanlar=require("../controllers/mekanlar");
 var ctrlYorumlar=require("../controllers/yorumlar");
-
 router
-.route('/mekanlar')
+.route("/mekanlar")
 .get(ctrlMekanlar.mekanlariListele)
 .post(ctrlMekanlar.mekanEkle);
 
 router
-.route('/mekanlar/:mekanid') //dinamik olarak id yi almamızı sağlar
+.route("/mekanlar/:mekanid")
 .get(ctrlMekanlar.mekanGetir)
 .put(ctrlMekanlar.mekanGuncelle)
 .delete(ctrlMekanlar.mekanSil);
 
 router
-.route('/mekanlar/:mekanid/yorumlar')
+.route("/mekanlar/:mekanid/yorumlar")
 .post(ctrlYorumlar.yorumEkle);
 
 router
-.route('/mekanlar/:mekanid/yorumlar/:yorumid')
+.route("/mekanlar/:mekanid/yorumlar/:yorumid")
 .get(ctrlYorumlar.yorumGetir)
-.put(ctrlYorumlar.yorumGuncelle) //güncellemek istiyorsak put metodu ile
+.put(ctrlYorumlar.yorumGuncelle)
 .delete(ctrlYorumlar.yorumSil);
 
 module.exports=router;
